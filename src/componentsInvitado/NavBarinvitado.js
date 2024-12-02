@@ -50,7 +50,7 @@ function NavBar() {
         </li>
         
 
-        {/* Mostrar la imagen si existe */}
+        {/* Mostrar la imagen si existe*/}
         {imagen && (
           <li>
             <img
