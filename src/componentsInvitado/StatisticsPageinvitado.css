@@ -1,0 +1,226 @@
+/* Estilos para el contenedor de estadísticas */
+.statistics-container {
+  display: flex; /* Usar flexbox para distribuir elementos */
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan a la siguiente línea si es necesario */
+  justify-content: center; /* Centrar los elementos horizontalmente */
+  align-items: center; /* Centrar los elementos verticalmente */
+  height: 100vh; /* Altura del contenedor igual a la altura de la ventana */
+  width: 95vw; /* Ancho del contenedor igual al 95% del ancho de la ventana */
+  margin: 0 auto; /* Centrar el contenedor principal */
+  padding: 0; /* Sin relleno alrededor del contenedor */
+}
+
+/* Estilos para cada ítem de estadísticas */
+.statistics-item {
+  position: relative; /* Posicionar elementos hijos de manera relativa */
+  flex: 0 1 48%; /* Ajustar el ancho de los elementos al 48% del contenedor */
+  height: 48%; /* Ajustar la altura de los elementos al 48% del contenedor */
+  box-sizing: border-box; /* Incluir bordes y relleno en el tamaño total de los elementos */
+  padding: 10px; /* Espaciado interno de 10px */
+  margin: 1%; /* Espaciado externo de 1% entre los elementos */
+}
+
+/* Contenedores para gráficos, tablas, clima y videos */
+.chart-container, .table-wrapper, .weather-container, .videos-container {
+  width: 100%; /* Ancho completo del contenedor */
+  height: 100%; /* Altura completa del contenedor */
+  background-color: white; /* Color de fondo blanco */
+  border: 2px solid black; /* Borde negro de 2px */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor del contenedor */
+  padding: 5px; /* Espaciado interno de 5px */
+  display: flex; /* Usar flexbox para distribuir elementos internos */
+  flex-direction: column; /* Disposición de los elementos en columna */
+  justify-content: center; /* Centrar los elementos verticalmente */
+  align-items: center; /* Centrar los elementos horizontalmente */
+  text-align: center; /* Centrar texto dentro de los elementos */
+}
+
+/* Estilos para los títulos dentro de los ítems de estadísticas */
+.statistics-item h2 {
+  position: absolute; /* Posicionar el título de manera absoluta */
+  bottom: -55px; /* Colocar el título 55px por debajo del contenedor */
+  left: 50%; /* Colocar el título en el centro horizontalmente */
+  transform: translateX(-50%); /* Ajustar para centrar el título */
+  font-size: 1em; /* Tamaño de fuente del título */
+  color: #fff; /* Color del texto del título */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+  padding: 5px 10px; /* Espaciado interno alrededor del título */
+  border-radius: 5px; /* Bordes redondeados */
+  text-align: center; /* Centrar el texto del título */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra para mejorar la legibilidad */
+}
+
+/* Espacio adicional para la fila inferior de ítems de estadísticas */
+.statistics-item:nth-child(3),
+.statistics-item:nth-child(4) {
+  margin-top: 80px; /* Espacio adicional para la fila inferior */
+}
+
+/* Estilos para el contenedor de clima */
+.weather-container {
+  background: linear-gradient(135deg, #74ebd5 0%, #acb6e5 100%); /* Degradado de fondo */
+  border: 2px solid #0077b6; /* Borde azul de 2px */
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra alrededor del contenedor */
+  padding: 5px; /* Espaciado interno de 5px */
+  font-family: 'Arial', sans-serif; /* Fuente Arial */
+  text-align: center; /* Centrar el texto */
+  width: 100%; /* Ancho completo del contenedor */
+  height: 100%; /* Altura completa del contenedor */
+  display: flex; /* Usar flexbox para distribuir elementos internos */
+  flex-direction: column; /* Disposición de los elementos en columna */
+  justify-content: center; /* Centrar los elementos verticalmente */
+}
+
+/* Estilos para los párrafos dentro del contenedor de clima */
+.weather-container p {
+  margin: 5px 0; /* Margen vertical de 5px */
+  font-size: 0.4em; /* Tamaño de fuente pequeño */
+  color: #fff; /* Color del texto blanco */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para mejorar la legibilidad */
+}
+
+/* Estilos para el contenedor de videos */
+.videos-container {
+  display: grid; /* Usar grid layout para distribuir elementos */
+  grid-template-columns: repeat(2, 1fr); /* Crear dos columnas para los videos */
+  grid-template-rows: repeat(2, 1fr); /* Crear dos filas para los videos */
+  gap: 5px; /* Espacio de 5px entre los videos */
+}
+
+/* Estilos para los iframes de videos */
+.videos-container iframe {
+  width: 95%; /* Ocupa el 95% del ancho del contenedor */
+  height: 100%; /* Ocupa el 100% del alto del contenedor */
+  border: 3px solid #0077b6; /* Borde azul de 3px */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor del contenedor */
+  object-fit: contain; /* Ajustar el contenido dentro del contenedor */
+}
+
+/* Estilos para los elementos canvas y tabla dentro de varios contenedores */
+.chart-container canvas,
+.weather-container canvas,
+.table-wrapper table {
+  width: 70%; /* Ocupa el 70% del ancho del contenedor */
+  height: 70%; /* Ocupa el 70% del alto del contenedor */
+  object-fit: contain; /* Ajustar el contenido dentro del contenedor */
+}
+
+/* Estilos para el contenedor de tablas */
+.table-container {
+  width: auto; /* Ajustar el ancho al contenido */
+  overflow-x: auto; /* Desplazamiento horizontal para tablas grandes */
+}
+
+/* Estilos para los botones de agregar y guardar */
+.add-button,
+.save-button {
+  position: absolute; /* Posicionar el botón de manera absoluta */
+  bottom: 10px; /* Colocar el botón en la parte inferior */
+  right: 10px; /* Colocar el botón en la esquina inferior derecha */
+  background-color: #007bff; /* Color de fondo azul */
+  color: #fff; /* Color del texto blanco */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interno */
+  font-size: 1em; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar cursor a mano */
+  transition: background-color 0.3s; /* Transición para el fondo */
+}
+
+/* Estilos para los botones al pasar el ratón */
+.add-button:hover,
+.save-button:hover {
+  background-color: #0056b3; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos para el formulario emergente */
+.popup-form {
+  position: fixed; /* Posicionar el formulario de manera fija */
+  top: 50%; /* Centrar verticalmente */
+  left: 50%; /* Centrar horizontalmente */
+  transform: translate(-50%, -50%); /* Ajustar para centrar el formulario */
+  background-color: #fff; /* Color de fondo blanco */
+  border: 2px solid #007bff; /* Borde azul de 2px */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor del contenedor */
+  padding: 20px; /* Espaciado interno de 20px */
+  z-index: 1000; /* Nivel de apilamiento alto */
+  width: 300px; /* Ancho fijo */
+}
+
+/* Estilos para el contenedor de formularios */
+.form-container {
+  display: flex; /* Usar flexbox para distribuir elementos internos */
+  flex-direction: column; /* Disposición de los elementos en columna */
+  gap: 15px; /* Separación de 15px entre cada input */
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="date"] {
+  margin: 10px 0; /* Margen vertical de 10px */
+  padding: 10px; /* Espaciado interno de 10px */
+  border: 2px solid #ff5733; /* Borde rojo de 2px */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 1em; /* Tamaño de fuente */
+  box-shadow: 0 0 5px rgba(255, 87, 51, 0.5); /* Sombra alrededor del borde */
+  outline: none; /* Sin borde al hacer clic */
+}
+
+/* Estilos para los inputs al hacer clic (enfoque) */
+.form-container input[type="text"]:focus,
+.form-container input[type="number"]:focus,
+.form-container input[type="date"]:focus {
+  border-color: #ff851b; /* Color de borde al hacer clic */
+  box-shadow: 0 0 10px rgba(255, 133, 27, 0.7); /* Sombra llamativa al hacer clic */
+}
+
+/* Estilos para el botón de cerrar en el formulario emergente */
+.close {
+  position: absolute; /* Posicionar el botón de manera absoluta */
+  top: 10px; /* Colocar el botón en la parte superior */
+  right: 20px; /* Colocar el botón en la esquina superior derecha */
+  font-size: 20px; /* Tamaño de fuente del botón */
+  cursor: pointer; /* Cambiar cursor a mano */
+  color: #007bff; /* Color del botón de cerrar */
+}
+
+/* Estilos para las tablas */
+table {
+  width: 100%; /* Ancho completo */
+  border-collapse: collapse; /* Elimina los espacios entre celdas */
+  font-size: 0.8em; /* Tamaño de fuente */
+  background-color: #f0e68c; /* Color de fondo más llamativo */
+}
+
+/* Estilos para celdas de encabezado y cuerpo */
+th, td {
+  padding: 10px; /* Espaciado interno de 10px */
+  text-align: left; /* Alinear texto a la izquierda */
+  border: 1px solid #ddd; /* Borde alrededor de celdas */
+}
+
+/* Estilos para celdas de encabezado */
+th {
+  background-color: #ffeb3b; /* Color de fondo para el encabezado */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para filas pares */
+tr:nth-child(even) {
+  background-color: #fff176; /* Color de fondo para filas pares */
+}
+
+/* Estilos para filas al pasar el ratón */
+tr:hover {
+  background-color: #ffee58; /* Color de fondo al pasar el ratón */
+}
+
+/* Estilos para los elementos de video */
+.video-item {
+  margin-bottom: 5px; /* Espaciado inferior de 5px */
+  box-sizing: border-box; /* Incluir bordes y relleno en el tamaño total de los elementos */
+}

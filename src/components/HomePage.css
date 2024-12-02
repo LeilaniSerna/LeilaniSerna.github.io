@@ -1,0 +1,173 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f6fa; /* Fondo ligeramente gris */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+  padding: 40px 20px; /* Padding para mayor espaciado */
+  background-color: white;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px; /* Margen superior más amplio */
+}
+
+.login-logo {
+  width: 150px; /* Tamaño del logo ajustado */
+  height: auto;
+  margin-bottom: 15px; /* Espaciado entre logo y título */
+}
+
+h1 {
+  color: #00438b; /* Azul como color principal */
+  font-size: 32px; /* Tamaño más grande para el título */
+  margin: 0;
+  font-weight: bold; /* Título con más peso */
+}
+
+.mapcontainer {
+  flex-grow: 1;
+  border-radius: 10px; /* Bordes más suaves */
+  width: 90%; /* Más espacio en pantallas pequeñas */
+  max-width: 850px; /* Límite para pantallas grandes */
+  margin: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.mapplaceholder {
+  width: 100%;
+  height: 300px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #777;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+  margin: 15px 0;
+  font-weight: 500; /* Texto con más énfasis */
+}
+
+.addbutton {
+  background-color: #00438b;
+  color: white;
+  border: none;
+  padding: 12px 20px; /* Botón más grande */
+  font-size: 16px; /* Texto más grande */
+  border-radius: 8px; /* Bordes más redondeados */
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.addbutton:hover {
+  background-color: #013368;
+  transform: translateY(-2px); /* Efecto de elevación al hacer hover */
+}
+
+.formulario-ganado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 90%;
+  max-width: 600px;
+  margin-top: 30px;
+  padding: 25px;
+  border: 2px solid #00438b;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.formulario-ganado input,
+.formulario-ganado textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px; /* Mayor separación entre campos */
+}
+
+.formulario-ganado button {
+  width: auto;
+  padding: 12px 25px;
+  background-color: #00438b;
+  color: white;
+  border: none;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.formulario-ganado button:hover {
+  background-color: #013368;
+  transform: translateY(-2px); /* Efecto de elevación en el botón */
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #00438b;
+  color: white;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .mapcontainer {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.clima {
+  background-color: #00438b;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.clima h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.clima p {
+  font-size: 16px;
+}

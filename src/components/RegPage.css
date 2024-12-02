@@ -1,0 +1,74 @@
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../img/fondo.webp') no-repeat center center fixed; /* Fondo */
+    background-size: cover;
+  }
+
+  .reg-container {
+    max-width: 400px;
+    margin: 5% auto; /* Centrar verticalmente */
+    padding: 5rem;
+    text-align: center;
+    background-color: rgb(255, 255, 255); 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .reg-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  .reg-form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reg-input-group {
+    margin-bottom: 1rem;
+  }
+
+  .reg-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #000000;
+  }
+
+  .reg-input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .reg-button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background-color: #00438b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .reg-button:hover {
+    background-color: #013368;
+  }
+
+  .reg-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+  .reg-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00438b;
+    margin: 0;
+    padding-bottom: 2rem;
+  }

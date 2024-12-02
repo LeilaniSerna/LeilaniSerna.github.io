@@ -1,0 +1,141 @@
+/* Estilos globales */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #e8ecf4; /* Color de fondo de reserva */
+}
+
+/* Contenedor principal */
+.login-page {
+  height: 100vh; /* Altura completa de la ventana */
+  width: 100vw; /* Ancho completo de la ventana */
+  display: flex; /* Flexbox para centrar */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  background-image: url('../img/fondo.webp'); /* Imagen de fondo */
+  background-size: cover; /* Ajuste para cubrir toda la pantalla */
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat; /* Sin repeticiones */
+}
+
+/* Contenedor del login */
+.login-container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Ancho máximo */
+  width: 100%; /* Ancho adaptable */
+  text-align: center;
+  box-sizing: border-box; /* Asegura que el padding no expanda el contenedor */
+}
+
+/* Encabezado del login */
+.login-header {
+  margin-bottom: 2rem;
+}
+
+.login-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00438b;
+  margin: 0;
+}
+
+.login-subtitle {
+  font-size: 1rem;
+  color: #929292;
+}
+
+/* Formulario */
+.login-form {
+  width: 100%;
+}
+
+.login-form .input-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.input-label {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #C9D3DB;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #222;
+  outline: none;
+}
+
+.input-field::placeholder {
+  color: #6b7280;
+}
+
+/* Botón de login */
+.form-action {
+  margin-top: 1rem;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #00438b;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #013368;
+}
+
+/* Mensaje de error */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Enlace de "Olvidaste tu contraseña" */
+.forgot-password {
+  font-size: 0.9rem;
+  color: #0063cc;
+  text-align: center;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/* Pie del login */
+.login-footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #222;
+}
+
+.register-link {
+  font-size: 0.9rem;
+  color: #0063cc;
+  text-align: center;
+  margin-top: 1rem;
+  cursor: pointer;
+}

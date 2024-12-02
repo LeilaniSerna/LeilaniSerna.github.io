@@ -1,0 +1,92 @@
+/* Contenedor de la barra de navegación para invitado */
+.navbarinvitado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #00bcd4; /* Color diferente pero moderno */
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  
+  /* Título de la barra de navegación para invitado */
+  .navbarinvitado-logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sombra de texto */
+    transition: color 0.3s ease;
+  }
+  
+  .navbarinvitado-logo:hover {
+    color: #ffeb3b; /* Amarillo cálido para el hover */
+  }
+  
+  /* Contenedor de los enlaces de la barra de navegación para invitado */
+  .navbarinvitado-links {
+    list-style: none;
+    display: flex;
+    gap: 15px; /* Espacio entre los enlaces */
+    align-items: center;
+  }
+  
+  /* Enlaces para invitado */
+  .navbarinvitado-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Hover para enlaces de invitado */
+  .navbarinvitado-links a:hover {
+    background-color: #0097a7; /* Azul turquesa oscuro para el hover */
+    transform: translateY(-3px); /* Efecto de elevación */
+  }
+  
+  /* Hover para el botón de logout de invitado */
+  .navbarinvitado-logout-button {
+    background-color: #f39c12; /* Naranja suave */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-left: 20px;
+  }
+  
+  /* Hover para el botón de logout de invitado */
+  .navbarinvitado-logout-button:hover {
+    background-color: #e67e22; /* Naranja más intenso */
+    transform: translateY(-3px); /* Efecto de elevación */
+  }
+  
+  .navbarinvitado-logout-button:active {
+    transform: translateY(1px); /* Efecto de presionar */
+  }
+  
+  /* Imagen del perfil de invitado */
+  .navbarinvitado-profile-image {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+    border: 2px solid #fff; /* Borde blanco alrededor de la imagen */
+    transition: transform 0.3s ease;
+  }
+  
+  .navbarinvitado-profile-image:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el ratón */
+  }
+  
